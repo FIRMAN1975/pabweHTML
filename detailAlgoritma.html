@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"> <!-- Mengatur encoding karakter ke UTF-8 agar semua huruf/simbol tampil dengan benar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat tampilan menyesuaikan layar (responsif) -->
+  <title>Detail Blog</title> <!-- Judul halaman yang muncul di tab browser -->
+</head>
+<body>
+
+  <!-- ===================== Header & Navigasi ===================== -->
+  <header>
+    <!-- Navigasi utama yang berisi daftar menu -->
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <!-- Setiap <li> berisi link ke halaman lain -->
+        <li><a href="index.html">Blog</a></li> <!-- Link ke halaman utama blog -->
+        <li><a href="form.html">Form</a></li> <!-- Link ke halaman form -->
+        <li><a href="tabel.html">Tabel</a></li> <!-- Link ke halaman tabel -->
+        <li><a href="cv.html">CV</a></li> <!-- Link ke halaman CV -->
+      </ul>
+    </nav>
+    <hr> <!-- Garis horizontal sebagai pemisah -->
+  </header>
+
+  <!-- ===================== Konten Utama ===================== -->
+  <main>
+
+    <!-- Link kembali ke halaman utama blog -->
+    <p><a href="index.html">← Kembali ke Blog</a></p>
+
+    <!-- Bagian gambar utama artikel -->
+    <figure>
+      <img src="img/javascript-39404.png" 
+           alt="Cover artikel Algoritma Dasar untuk Pemula" 
+           width="600"> <!-- Gambar cover artikel -->
+      <figcaption>Cover Artikel: Algoritma Dasar untuk Pemula</figcaption> <!-- Keterangan gambar -->
+    </figure>
+
+    <!-- Bagian info penulis -->
+    <section>
+      <p>
+        <img src="img/autor.png" alt="Foto penulis" width="60"> <!-- Foto profil penulis -->
+        <b>Bagas Prasetyo</b> • <!-- Nama penulis -->
+        <time datetime="2025-03-12">12 Maret 2025</time> <!-- Tanggal artikel dipublikasikan -->
+      </p>
+    </section>
+
+    <!-- Bagian artikel utama -->
+    <article>
+      <h1>Algoritma Dasar untuk Pemula</h1> <!-- Judul artikel -->
+      <p><strong>Label:</strong> Teknologi, Pemrograman</p> <!-- Label kategori artikel -->
+      <p>
+        <!-- Paragraf isi artikel -->
+        Algoritma adalah langkah-langkah logis untuk menyelesaikan masalah dengan komputer.
+        Artikel ini membahas dasar algoritma seperti urutan, percabangan, dan perulangan 
+        dengan contoh yang mudah dipahami oleh pemula.
+      </p>
+    </article>
+
+    <hr> <!-- Pemisah antar bagian -->
+
+    <!-- ===================== Form Komentar ===================== -->
+    <section>
+      <h2>Tinggalkan Komentar</h2>
+      <!-- Form untuk menambahkan komentar -->
+      <form action="" method="get"> <!-- method="get" agar input terlihat di URL -->
+        <p>
+          <!-- Input nama pengunjung -->
+          <label for="nama">Nama:</label><br>
+          <input type="text" id="nama" name="nama" required>
+        </p>
+        <p>
+          <!-- Input komentar -->
+          <label for="komentar">Komentar:</label><br>
+          <textarea id="komentar" name="komentar" rows="4" cols="50" required></textarea>
+        </p>
+        <p>
+          <!-- Tombol untuk mengirim form -->
+          <button type="submit">Kirim</button>
+        </p>
+      </form> 
+    </section>
+
+    <hr> <!-- Garis pemisah -->
+
+    <!-- ===================== Daftar Komentar ===================== -->
+    <section>
+      <h2>Daftar Komentar</h2>
+
+      <!-- Komentar pertama -->
+      <div>
+        <img src="img/autor.png" alt="Foto profil Nina" width="50"> <!-- Foto pengguna -->
+        <b>Nina</b> <!-- Nama pengomentar -->
+        <p>Penjelasan algoritma sederhana tapi jelas, sangat membantu!</p> <!-- Isi komentar -->
+      </div>
+
+      <hr> <!-- Pemisah antar komentar -->
+
+      <!-- Komentar kedua -->
+      <div>
+        <img src="img/autor.png" alt="Foto profil Yudha" width="50"> <!-- Foto pengguna -->
+        <b>Yudha</b>
+        <p>Artikel ini cocok untuk pemula yang ingin memahami dasar algoritma.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer>
+    <hr>
+    <!-- Informasi hak cipta -->
+    <p>&copy; 2025 Bagas Prasetyo. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>

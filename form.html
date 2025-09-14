@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulir Pendaftaran</title>
+</head>
+<body>
+  <!-- ========== Header & Navigasi ========== -->
+  <header>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="form.html" aria-current="page">Form</a></li>
+        <li><a href="tabel.html">Tabel</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+      <hr>
+    </nav>
+  </header>
+
+  <!-- ========== Judul Halaman ========== -->
+  <main>
+    <h1>Formulir Pendaftaran</h1>
+
+    <!-- ========== Formulir Pendaftaran ========== -->
+    <form action="index.html" method="get">
+      
+      <!-- Nama Lengkap -->
+      <label for="nama">Nama Lengkap:</label>
+      <input 
+        type="text" 
+        id="nama" 
+        name="nama" 
+        placeholder="Masukkan nama lengkap" 
+        required
+      >
+
+      <!-- Jenis Kelamin -->
+      <fieldset>
+        <legend>Jenis Kelamin</legend>
+        
+        <input 
+          type="radio" 
+          id="pria" 
+          name="gender" 
+          value="pria" 
+          required
+        >
+        <label for="pria">Pria</label>
+
+        <input 
+          type="radio" 
+          id="wanita" 
+          name="gender" 
+          value="wanita" 
+          required
+        >
+        <label for="wanita">Wanita</label>
+      </fieldset>
+
+      <!-- Tempat & Tanggal Lahir -->
+      <label for="tempat">Tempat Lahir:</label>
+      <input 
+        type="text" 
+        id="tempat" 
+        name="tempat" 
+        placeholder="Masukkan tempat lahir" 
+        required
+      >
+
+      <label for="tgl">Tanggal Lahir:</label>
+      <input 
+        type="date" 
+        id="tgl" 
+        name="tgl" 
+        required
+      >
+
+      <!-- Hobi -->
+      <fieldset>
+        <legend>Hobi</legend>
+
+        <input 
+          type="checkbox" 
+          id="hobi1" 
+          name="hobi[]" 
+          value="Membaca"
+        >
+        <label for="hobi1">Membaca</label>
+
+        <input 
+          type="checkbox" 
+          id="hobi2" 
+          name="hobi[]" 
+          value="Olahraga"
+        >
+        <label for="hobi2">Olahraga</label>
+
+        <input 
+          type="checkbox" 
+          id="hobi3" 
+          name="hobi[]" 
+          value="Musik"
+        >
+        <label for="hobi3">Musik</label>
+      </fieldset>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        placeholder="Masukkan password" 
+        required
+      >
+
+      <!-- Persetujuan -->
+      <div>
+        <input 
+          type="checkbox" 
+          id="setuju" 
+          name="setuju" 
+          required
+        >
+        <label for="setuju">Saya menyetujui syarat dan ketentuan</label>
+      </div>
+
+      <!-- Tombol Aksi -->
+      <div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </main>
+</body>
+</html>

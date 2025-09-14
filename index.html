@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halaman Blog</title>
+  <meta name="description" content="Kumpulan artikel seputar teknologi, pemrograman, dan pendidikan." />
+</head>
+<body>
+
+  <!-- =========================
+       SKIP TO CONTENT
+  ========================== -->
+  <button onclick="location.href='#konten'" class="skip-button">
+    Lewati ke Konten
+  </button>
+
+  <!-- =========================
+       HEADER & NAVIGASI
+  ========================== -->
+  <header>
+    <h1>Selamat Datang di Blog Saya</h1>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html" aria-current="page">Blog</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="tabel.html">Tabel</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr />
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+  <main id="konten">
+
+    <!-- Artikel Populer -->
+    <section aria-labelledby="populer">
+      <h2 id="populer">Artikel Populer</h2>
+      <ol>
+        <li><a href="detailBelajarJS.html">Belajar JavaScript Dasar</a></li>
+        <li><a href="detailFlexCSS.html">Panduan CSS Flexbox</a></li>
+        <li><a href="detailPhyton.html">Dasar-Dasar Python</a></li>
+        <li><a href="detailWeb.html">Membuat Website Responsif</a></li>
+        <li><a href="detailAlgoritma.html">Algoritma Dasar untuk Pemula</a></li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <!-- Daftar Artikel Terbaru -->
+    <section aria-labelledby="terbaru">
+      <h2 id="terbaru">Artikel Terbaru</h2>
+
+      <!-- Artikel 1 -->
+      <article>
+        <header>
+          <h3><a href="detailBelajarJS.html">Belajar JavaScript Dasar</a></h3>
+          <p>
+            <img src="/img/autor.png" alt="Foto penulis Rina Sari" width="48" height="48" />
+            <b>Rina Sari</b> • <time datetime="2025-07-15">15 Juli 2025</time>
+          </p>
+        </header>
+        <figure>
+          <img src="img/javascript-39404.png" alt="Sampul artikel Belajar JavaScript Dasar" width="320" />
+          <figcaption>JavaScript untuk membuat web interaktif dengan contoh mudah.</figcaption>
+        </figure>
+        <p>Pahami variabel, fungsi, dan event handling agar bisa membuat skrip sederhana di halaman web.</p>
+        <p><strong>Label:</strong> <a href="#">Teknologi</a>, <a href="#">Web Development</a></p>
+        <p><a href="detailBelajarJS.html">Baca selengkapnya</a> • <a href="#">5 Komentar</a></p>
+      </article>
+
+      <hr />
+
+      <!-- Artikel 2 -->
+      <article>
+        <header>
+          <h3><a href="detailFlexCSS.html">Panduan CSS Flexbox</a></h3>
+          <p>
+            <img src="/img/autor.png" alt="Foto penulis Teguh Pratama" width="48" height="48" />
+            <b>Teguh Pratama</b> • <time datetime="2025-06-10">10 Juni 2025</time>
+          </p>
+        </header>
+        <figure>
+          <img src="img/icons8-python-100.png" alt="Sampul artikel Panduan CSS Flexbox" width="320" />
+          <figcaption>Flexbox memudahkan layout baris dan kolom responsif.</figcaption>
+        </figure>
+        <p>Pelajari properti dasar flexbox dan contohnya agar desain web lebih fleksibel.</p>
+        <p><strong>Label:</strong> <a href="#">Teknologi</a>, <a href="#">Web Design</a></p>
+        <p><a href="detailFlexCSS.html">Baca selengkapnya</a> • <a href="#">3 Komentar</a></p>
+      </article>
+
+      <hr />
+
+      <!-- Artikel 3 -->
+      <article>
+        <header>
+          <h3><a href="detailPhyton.html">Dasar-Dasar Python</a></h3>
+          <p>
+            <img src="/img/autor.png" alt="Foto penulis Ahmad Fauzi" width="48" height="48" />
+            <b>Ahmad Fauzi</b> • <time datetime="2025-05-05">5 Mei 2025</time>
+          </p>
+        </header>
+        <figure>
+          <img src="img/javascript-39404.png" alt="Sampul artikel Dasar-Dasar Python" width="320" />
+          <figcaption>Belajar Python: variabel, tipe data, kondisi, dan perulangan.</figcaption>
+        </figure>
+        <p>Artikel ini memberikan contoh sederhana agar pemula mudah memahami bahasa Python.</p>
+        <p><strong>Label:</strong> <a href="#">Teknologi</a>, <a href="#">Pemrograman</a></p>
+        <p><a href="detailPhyton.html">Baca selengkapnya</a> • <a href="#">4 Komentar</a></p>
+      </article>
+
+      <hr />
+
+      <!-- Artikel 4 -->
+      <article>
+        <header>
+          <h3><a href="detailWeb.html">Membuat Website Responsif</a></h3>
+          <p>
+            <img src="/img/autor.png" alt="Foto penulis Siti Aisyah" width="48" height="48" />
+            <b>Siti Aisyah</b> • <time datetime="2025-04-20">20 April 2025</time>
+          </p>
+        </header>
+        <figure>
+          <img src="img/icons8-python-100.png" alt="Sampul artikel Membuat Website Responsif" width="320" />
+          <figcaption>Website responsif nyaman dilihat di ponsel dan desktop.</figcaption>
+        </figure>
+        <p>Gunakan CSS dan media query untuk membangun website yang fleksibel dan rapi.</p>
+        <p><strong>Label:</strong> <a href="#">Teknologi</a>, <a href="#">Web Design</a></p>
+        <p><a href="detailWeb.html">Baca selengkapnya</a> • <a href="#">6 Komentar</a></p>
+      </article>
+
+      <hr />
+
+      <!-- Artikel 5 -->
+      <article>
+        <header>
+          <h3><a href="detailAlgoritma.html">Algoritma Dasar untuk Pemula</a></h3>
+          <p>
+            <img src="/img/autor.png" alt="Foto penulis Bagas Prasetyo" width="48" height="48" />
+            <b>Bagas Prasetyo</b> • <time datetime="2025-03-12">12 Maret 2025</time>
+          </p>
+        </header>
+        <figure>
+          <img src="img/javascript-39404.png" alt="Sampul artikel Algoritma Dasar" width="320" />
+          <figcaption>Langkah-langkah logis untuk menyelesaikan masalah dengan komputer.</figcaption>
+        </figure>
+        <p>Pelajari urutan, percabangan, dan perulangan dengan contoh mudah untuk pemula.</p>
+        <p><strong>Label:</strong> <a href="#">Teknologi</a>, <a href="#">Pemrograman</a></p>
+        <p><a href="detailAlgoritma.html">Baca selengkapnya</a> • <a href="#">2 Komentar</a></p>
+      </article>
+    </section>
+
+    <hr />
+
+    <!-- Sidebar -->
+    <aside aria-labelledby="samping">
+      <h2 id="samping">Tentang & Kategori</h2>
+
+      <section aria-labelledby="tentang">
+        <h3 id="tentang">Tentang Penulis</h3>
+        <p><strong>Firman Bintang Hutasoit</strong> menulis seputar teknologi, pemrograman, dan pendidikan. Suka berbagi materi praktis untuk pemula.</p>
+        <address>
+          Kontak: <a href="mailto:firman@gmail.com">firman@gmail.com</a>
+        </address>
+      </section>
+
+      <section aria-labelledby="kategori">
+        <h3 id="kategori">Kategori Populer</h3>
+        <ul>
+          <li><a href="#">Teknologi</a></li>
+          <li><a href="#">Pemrograman</a></li>
+          <li><a href="#">Pendidikan</a></li>
+          <li><a href="#">Tips</a></li>
+          <li><a href="#">Frontend</a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="arsip">
+        <h3 id="arsip">Arsip</h3>
+        <ul>
+          <li><a href="#">Agustus 2025</a></li>
+          <li><a href="#">Juli 2025</a></li>
+          <li><a href="#">Juni 2025</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- Pagination -->
+    <nav aria-label="Pagination">
+      <ul>
+        <li><a href="#" aria-current="page">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#" rel="next">Berikutnya »</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <hr />
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer>
+    <p>&copy; 2025 Firman Bintang Hutasoit. Seluruh hak cipta.</p>
+    <nav aria-label="Tautan footer">
+      <ul>
+        <li><a href="cv.html">Tentang</a></li>
+        <li><a href="#">Kebijakan Privasi</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>

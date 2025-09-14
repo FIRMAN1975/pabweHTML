@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"> <!-- Encoding karakter UTF-8 supaya semua karakter bahasa Indonesia tampil dengan benar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat halaman responsive di perangkat mobile -->
+  <title>Detail Blog</title> <!-- Judul tab browser -->
+</head>
+<body>
+
+  <!-- ========== HEADER (Bagian Atas Halaman) ========== -->
+  <header>
+    <!-- Navigasi utama website -->
+    <nav>
+      <ul>
+        <!-- Link menuju halaman utama blog -->
+        <li><a href="index.html">Blog</a></li>
+        <!-- Link menuju halaman form -->
+        <li><a href="form.html">Form</a></li>
+        <!-- Link menuju halaman tabel -->
+        <li><a href="tabel.html">Tabel</a></li>
+        <!-- Link menuju halaman CV -->
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+    <hr> <!-- Garis horizontal untuk pemisah visual -->
+  </header>
+
+  <!-- ========== MAIN CONTENT (Isi Utama Halaman) ========== -->
+  <main>
+
+    <!-- Tombol kembali ke halaman daftar blog -->
+    <p><a href="index.html">← Kembali ke Blog</a></p>
+
+    <!-- Bagian gambar utama artikel -->
+    <figure>
+      <!-- Gambar cover artikel -->
+      <img src="img/javascript-39404.png" 
+           alt="Cover artikel Belajar JavaScript Dasar" 
+           width="600">
+      <!-- Caption gambar -->
+      <figcaption>Artikel: Belajar JavaScript Dasar</figcaption>
+    </figure>
+
+    <!-- Informasi tentang penulis -->
+    <section>
+      <p>
+        <!-- Foto penulis -->
+        <img src="img/autor.png" alt="Foto penulis" width="60">
+        <!-- Nama penulis -->
+        <b>Rina Sari</b> • 
+        <!-- Tanggal artikel ditulis -->
+        <time datetime="2025-07-15">15 Juli 2025</time>
+      </p>
+    </section>
+
+    <!-- Isi artikel -->
+    <article>
+      <!-- Judul artikel -->
+      <h1>Belajar JavaScript Dasar</h1>
+      <!-- Label/kategori artikel -->
+      <p><strong>Label:</strong> Teknologi, Web Development</p>
+      <!-- Isi ringkasan artikel -->
+      <p>
+        JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif.
+        Artikel ini menjelaskan dasar-dasar JavaScript, seperti variabel, fungsi, dan event handling, 
+        sehingga pembaca bisa mulai membuat skrip sederhana di halaman web.
+      </p>
+    </article>
+
+    <hr> <!-- Pemisah sebelum masuk ke bagian komentar -->
+
+    <!-- ========== FORM KOMENTAR ========== -->
+    <section>
+      <h2>Tinggalkan Komentar</h2>
+      <!-- Form untuk mengisi komentar -->
+      <!-- Tidak diberi "action" agar tidak dilempar ke halaman lain -->
+      <form method="get"> 
+        <!-- Input nama -->
+        <p>
+          <label for="nama">Nama:</label><br>
+          <input type="text" id="nama" name="nama" required>
+        </p>
+        <!-- Input komentar -->
+        <p>
+          <label for="komentar">Komentar:</label><br>
+          <textarea id="komentar" name="komentar" rows="4" cols="50" required></textarea>
+        </p>
+        <!-- Tombol kirim -->
+        <p>
+          <button type="submit">Kirim</button>
+        </p>
+      </form> 
+    </section>
+
+    <hr> <!-- Garis pemisah antara form komentar dan daftar komentar -->
+
+    <!-- ========== DAFTAR KOMENTAR ========== -->
+    <section>
+      <h2>Daftar Komentar</h2>
+      
+      <!-- Komentar pengguna pertama -->
+      <div>
+        <img src="/img/autor.png" alt="Foto pengguna 4" width="50">
+        <b>Dewi</b>
+        <p>Belajar JavaScript jadi lebih mudah dengan contoh ini!</p>
+      </div>
+      <hr> <!-- Garis pemisah antar komentar -->
+
+      <!-- Komentar pengguna kedua -->
+      <div>
+        <img src="/img/autor.png" alt="Foto pengguna 5" width="50">
+        <b>Eko</b>
+        <p>Penjelasan singkat dan jelas, cocok untuk pemula.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER (Bagian Bawah Halaman) ========== -->
+  <footer>
+    <hr> <!-- Garis pemisah -->
+    <p>&copy; 2025 Rina Sari. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>

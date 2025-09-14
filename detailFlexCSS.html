@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Blog</title>
+</head>
+<body>
+
+  <!-- ========== Header ========== -->
+  <header>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="tabel.html">Tabel</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <!-- ========== Konten Utama ========== -->
+  <main>
+    <!-- Link kembali -->
+    <p><a href="index.html">← Kembali ke Blog</a></p>
+
+    <!-- Gambar artikel -->
+    <figure>
+      <img src="img/icons8-python-100.png" 
+           alt="Cover artikel Panduan CSS Flexbox" 
+           width="600">
+      <figcaption>Cover Artikel: Panduan CSS Flexbox</figcaption>
+    </figure>
+
+    <!-- Info penulis -->
+    <section>
+      <p>
+        <img src="img/autor.png" alt="Foto penulis" width="60">
+        <b>Teguh Pratama</b> • 
+        <time datetime="2025-06-10">10 Juni 2025</time>
+      </p>
+    </section>
+
+    <!-- Artikel -->
+    <article>
+      <h1>Panduan CSS Flexbox</h1>
+      <p><strong>Label:</strong> Teknologi, Web Design</p>
+      <p>
+        Flexbox adalah metode layout modern di CSS yang memudahkan pengaturan elemen dalam baris atau kolom.
+        Artikel ini membahas properti dasar flexbox dan contoh penggunaannya agar desain web lebih responsif.
+      </p>
+    </article>
+
+    <hr>
+
+    <!-- Form komentar -->
+    <section>
+      <h2>Tinggalkan Komentar</h2>
+      <form action="" method="get">
+        <p>
+          <label for="nama">Nama:</label><br>
+          <input type="text" id="nama" name="nama" required>
+        </p>
+        <p>
+          <label for="komentar">Komentar:</label><br>
+          <textarea id="komentar" name="komentar" rows="4" cols="50" required></textarea>
+        </p>
+        <p>
+          <button type="submit">Kirim</button>
+        </p>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Daftar komentar -->
+    <section>
+      <h2>Daftar Komentar</h2>
+
+      <div>
+        <img src="img/autor.png" alt="Foto pengguna 6" width="50">
+        <b>Fajar</b>
+        <p>Flexbox sekarang jadi lebih mudah dipahami, terima kasih!</p>
+      </div>
+      <hr>
+      <div>
+        <img src="img/autor.png" alt="Foto pengguna 7" width="50">
+        <b>Linda</b>
+        <p>Contoh penggunaan jelas, sangat membantu untuk layout responsif.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer>
+    <hr>
+    <p>&copy; 2025 Teguh Pratama. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>

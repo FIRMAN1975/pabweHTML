@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Metadata dasar halaman -->
+  <meta charset="UTF-8">
+  <!-- Membuat halaman responsif di semua perangkat -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Blog</title>
+</head>
+<body>
+
+  <!-- ======================== -->
+  <!-- Bagian Header & Navigasi -->
+  <!-- ======================== -->
+  <header>
+    <!-- Navigasi utama berisi link ke halaman lain -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="tabel.html">Tabel</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+    <hr> <!-- Garis pemisah agar lebih rapi -->
+  </header>
+
+  <!-- ======================== -->
+  <!-- Bagian Konten Utama -->
+  <!-- ======================== -->
+  <main>
+
+    <!-- Link untuk kembali ke daftar blog -->
+    <p><a href="index.html">← Kembali ke Blog</a></p>
+
+    <!-- Gambar cover artikel dengan keterangan -->
+    <figure>
+      <img src="img/icons8-python-100.png" 
+           alt="Cover artikel Membuat Website Responsif" 
+           width="600">
+      <figcaption>Cover Artikel: Membuat Website Responsif</figcaption>
+    </figure>
+
+    <!-- Informasi penulis artikel -->
+    <section>
+      <p>
+        <!-- Foto penulis -->
+        <img src="/img/autor.png" alt="Foto penulis" width="60">
+        <!-- Nama penulis -->
+        <b>Siti Aisyah</b> • 
+        <!-- Tanggal publikasi artikel -->
+        <time datetime="2025-04-20">20 April 2025</time>
+      </p>
+    </section>
+
+    <!-- Isi utama artikel -->
+    <article>
+      <!-- Judul artikel -->
+      <h1>Membuat Website Responsif</h1>
+      <!-- Label atau kategori artikel -->
+      <p><strong>Label:</strong> Teknologi, Web Design</p>
+      <!-- Konten artikel -->
+      <p>
+        Website responsif dapat menyesuaikan tampilannya di berbagai perangkat. 
+        Artikel ini menjelaskan teknik CSS dan media query untuk membuat website yang fleksibel 
+        dan nyaman dilihat dari ponsel maupun desktop.
+      </p>
+    </article>
+
+    <hr> <!-- Garis pemisah antar bagian -->
+
+    <!-- ======================== -->
+    <!-- Form Komentar -->
+    <!-- ======================== -->
+    <section>
+      <h2>Tinggalkan Komentar</h2>
+
+      <!-- 
+        Formulir komentar menggunakan method GET
+        - action="" artinya tetap di halaman yang sama
+        - method="get" agar data muncul di URL setelah dikirim
+        - form ini tidak menyimpan data ke database (hanya simulasi)
+      -->
+      <form action="" method="get">
+        <!-- Input nama -->
+        <p>
+          <label for="nama">Nama:</label><br>
+          <input type="text" id="nama" name="nama" required>
+        </p>
+
+        <!-- Input komentar -->
+        <p>
+          <label for="komentar">Komentar:</label><br>
+          <textarea id="komentar" name="komentar" rows="4" cols="50" required></textarea>
+        </p>
+
+        <!-- Tombol submit -->
+        <p>
+          <button type="submit">Kirim</button>
+        </p>
+      </form> 
+    </section>
+
+    <hr> <!-- Garis pemisah antar bagian -->
+
+    <!-- ======================== -->
+    <!-- Daftar Komentar -->
+    <!-- ======================== -->
+    <section>
+      <h2>Daftar Komentar</h2>
+
+      <!-- Komentar pertama -->
+      <div>
+        <img src="/img/autor.png" alt="Foto pengguna 10" width="50">
+        <b>Lila</b>
+        <p>Sangat membantu untuk membuat website yang responsif di semua perangkat!</p>
+      </div>
+
+      <hr> <!-- Pemisah antar komentar -->
+
+      <!-- Komentar kedua -->
+      <div>
+        <img src="/img/autor.png" alt="Foto pengguna 11" width="50">
+        <b>Hendra</b>
+        <p>Media query jadi lebih mudah dipahami dengan artikel ini.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================== -->
+  <!-- Bagian Footer -->
+  <!-- ======================== -->
+  <footer>
+    <hr>
+    <!-- Hak cipta artikel -->
+    <p>&copy; 2025 Siti Aisyah. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>

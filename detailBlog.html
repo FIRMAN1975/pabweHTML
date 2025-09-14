@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- 
+    Deklarasi karakter & metadata 
+    - UTF-8: mendukung semua karakter (huruf, angka, simbol, dll)
+    - viewport: membuat halaman menyesuaikan dengan layar perangkat (responsif)
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Judul halaman yang tampil di tab browser -->
+  <title>Detail Blog</title>
+</head>
+<body>
+
+  <!-- ========================= -->
+  <!-- BAGIAN HEADER -->
+  <!-- Berisi navigasi utama -->
+  <!-- ========================= -->
+  <header>
+    <!-- Navigasi utama -->
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <!-- Menu menuju halaman index -->
+        <li><a href="index.html">Blog</a></li>
+        <!-- Menu menuju halaman form -->
+        <li><a href="form.html">Form</a></li>
+        <!-- Menu menuju halaman tabel -->
+        <li><a href="tabel.html">Tabel</a></li>
+        <!-- Menu menuju halaman CV -->
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+    <!-- Garis horizontal pemisah -->
+    <hr>
+  </header>
+
+  <!-- ========================= -->
+  <!-- BAGIAN KONTEN UTAMA -->
+  <!-- ========================= -->
+  <main>
+
+    <!-- Link untuk kembali ke halaman blog utama -->
+    <p><a href="index.html">← Kembali ke Blog</a></p>
+
+    <!-- Gambar ilustrasi artikel -->
+    <figure>
+      <!-- Gambar cover artikel -->
+      <img src="img/icons8-python-100.png" 
+           alt="Cover artikel Panduan CSS Flexbox" 
+           width="600">
+      <!-- Judul/penjelasan gambar -->
+      <figcaption>Cover Artikel: Panduan CSS Flexbox</figcaption>
+    </figure>
+
+    <!-- Informasi penulis artikel -->
+    <section>
+      <p>
+        <!-- Foto penulis -->
+        <img src="img/autor.png" alt="Foto penulis" width="60">
+        <!-- Nama penulis ditulis tebal -->
+        <b>Teguh Pratama</b> • 
+        <!-- Tanggal publikasi artikel -->
+        <time datetime="2025-06-10">10 Juni 2025</time>
+      </p>
+    </section>
+
+    <!-- Isi artikel -->
+    <article>
+      <!-- Judul artikel -->
+      <h1>Panduan CSS Flexbox</h1>
+      <!-- Label kategori artikel -->
+      <p><strong>Label:</strong> Teknologi, Web Design</p>
+      <!-- Isi konten artikel -->
+      <p>
+        Flexbox adalah metode layout modern di CSS yang memudahkan pengaturan elemen dalam baris atau kolom.
+        Artikel ini membahas properti dasar flexbox dan contoh penggunaannya agar desain web lebih responsif.
+      </p>
+    </article>
+
+    <!-- Garis pemisah antar bagian -->
+    <hr>
+
+    <!-- ========================= -->
+    <!-- FORM KOMENTAR -->
+    <!-- ========================= -->
+    <section>
+      <h2>Tinggalkan Komentar</h2>
+
+      <!-- 
+        Form komentar
+        - action="" artinya data tetap di halaman ini
+        - method="get" artinya data dikirim melalui URL (contoh: ?nama=Budi&komentar=Bagus)
+      -->
+      <form action="" method="get">
+        <!-- Input Nama -->
+        <p>
+          <label for="nama">Nama:</label><br>
+          <!-- required = wajib diisi -->
+          <input type="text" id="nama" name="nama" required>
+        </p>
+
+        <!-- Input Komentar -->
+        <p>
+          <label for="komentar">Komentar:</label><br>
+          <!-- textarea: input lebih panjang untuk komentar -->
+          <textarea id="komentar" name="komentar" rows="4" cols="50" required></textarea>
+        </p>
+
+        <!-- Tombol untuk mengirim form -->
+        <p>
+          <button type="submit">Kirim</button>
+        </p>
+      </form>
+    </section>
+
+    <!-- Garis pemisah antar bagian -->
+    <hr>
+
+    <!-- ========================= -->
+    <!-- DAFTAR KOMENTAR -->
+    <!-- ========================= -->
+    <section>
+      <h2>Daftar Komentar</h2>
+
+      <!-- Komentar pertama -->
+      <div>
+        <!-- Foto profil pengguna -->
+        <img src="img/autor.png" alt="Foto pengguna 6" width="50">
+        <!-- Nama pengguna -->
+        <b>Fajar</b>
+        <!-- Isi komentar -->
+        <p>Flexbox sekarang jadi lebih mudah dipahami, terima kasih!</p>
+      </div>
+
+      <!-- Garis pemisah antar komentar -->
+      <hr>
+
+      <!-- Komentar kedua -->
+      <div>
+        <img src="img/autor.png" alt="Foto pengguna 7" width="50">
+        <b>Linda</b>
+        <p>Contoh penggunaan jelas, sangat membantu untuk layout responsif.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================= -->
+  <!-- BAGIAN FOOTER -->
+  <!-- ========================= -->
+  <footer>
+    <!-- Garis pemisah -->
+    <hr>
+    <!-- Informasi hak cipta -->
+    <p>&copy; 2025 Teguh Pratama. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>
